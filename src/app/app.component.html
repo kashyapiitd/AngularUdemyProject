@@ -1,0 +1,9 @@
+<app-header (sectionSelected) = onSectionToggle($event)></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="sectionToBeDisplayed === 'recipeSection'" ></app-recipes>
+      <app-shopping-list *ngIf="sectionToBeDisplayed === 'shoppingListSection'"></app-shopping-list>
+    </div>
+  </div>
+</div>
